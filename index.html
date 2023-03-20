@@ -12,13 +12,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,700;1,400&family=Fira+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://kit.fontawesome.com/d64cd5426c.js" crossorigin="anonymous"></script>
     <title>Roberto Jan</title>
 </head>
 <body>
     <header>
         <div class="wrapper">
-            <nav>
-                <ul>
+            <nav class="headerNav">
+                <ul class="navUl">
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
@@ -28,7 +29,11 @@
             <div class="author">
                 <h1>Roberto Jan</h1>
                 <p class="jobTitle">Junior Web Developer</p>
-                <button><a href="#contact">get in touch</a></button>
+                <div class="headerButton">
+                    <button>
+                        <a href="#contact">get in touch</a>
+                    </button>
+                </div>
             </div>
         </div>
     </header>
@@ -36,20 +41,58 @@
         <section class="about">
             <div class="wrapper">
                 <h2>About Me</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, deserunt. Voluptatibus, minima eum ullam ab optio adipisci aliquam doloremque odio maxime ratione, atque aperiam cupiditate quos odit, vero similique facere.</p>
+                <div class="authorImageContainer">
+                    <img src="./assets/robertoJan.png" alt="a picture of Roberto Jan with a neutral face">
+                </div>
+                <p>Hi! My name is Roberto Jan and I am a proficient front-end web developer with focus on crafting responsive and accessible web applications. My technical skills are honed in a variety of programming languages such as React, Javascript, HTML5, CSS3, and API integrations. My experience in customer service and the restaurant industry has imparted in me a discerning eye for detail and a knack for prompt problem-solving. My aspiration is to build visually captivating applications, tailor-made to meet the bespoke needs of my clients.</p>
             </div>
         </section>
         <section class="skills">
             <div class="wrapper">
-                <h2></h2>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                <h2>Skills</h2>
+                <ul class="skillsList">
+                    <li class="skillsItem">
+                        <div class="iconContainer">
+                            <i class="fa-brands fa-html5" title="html5"></i>
+                        </div>
+                        <p class="iconLabel">HTML</p>
+                    </li>
+                    <li class="skillsItem">
+                        <div class="iconContainer">
+                            <i class="fa-brands fa-css3-alt" title="css3"></i>
+                        </div>
+                        <p class="iconLabel">CSS</p>
+                    </li>
+                    <li class="skillsItem">
+                        <div class="iconContainer">
+                            <i class="fa-brands fa-sass" title="sass"></i>
+                        </div>
+                        <p class="iconLabel">SASS</p>
+                    </li>
+                    <li class="skillsItem">
+                        <div class="iconContainer">
+                            <i class="fa-brands fa-square-js" title="javascript"></i>
+                        </div>
+                        <p class="iconLabel">JAVASCRIPT</p>
+                    </li>
+                    <li class="skillsItem">
+                        <div class="iconContainer">
+                            <i class="fa-brands fa-react" title="react"></i>
+                        </div>
+                        <p class="iconLabel">REACT</p>
+                    </li>
+                    <li class="skillsItem">
+                        <div class="iconContainer">
+                            <i class="fa-brands fa-github" title="gitHub"></i>
+                        </div>
+                        <p class="iconLabel">GITHUB</p>
+                    </li>
+                    <li class="skillsItem">
+                        <div class="iconContainer">
+                            <i class="fa-solid fa-folder-open" title="firebase"></i>
+                        </div>
+                        <p class="iconLabel">FIREBASE</p>
+                    </li>
                 </ul>
             </div>
         </section>

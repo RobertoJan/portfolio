@@ -1,0 +1,63 @@
+@use "./variables" as *;
+
+header {
+    background-image: linear-gradient(to bottom right, $primaryPurple, $primaryGrey);
+    height: 85vh;
+    color: $primaryWhite;
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center; 
+        height: 100%;
+    }
+}
+
+.navUl {
+    display: flex;
+    padding-top: 25px;
+    
+    a{
+        color: $primaryWhite;
+        padding: 15px 10px;
+    }
+
+    a:hover, a:focus {
+        color: $secondaryPurple;
+        transition: 1s;
+    }
+}
+
+.author {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    text-align: center;
+
+    p {
+        margin: 10px;
+    }
+
+    button {
+        border-style: none;
+        background-color: $primaryBrown;
+        color: $primaryBlack;
+        padding: 10px;
+
+        a{
+            color: $primaryBlack;
+            padding: 10px 10px;
+        }
+    
+        a:hover, a:focus {
+            color: $primaryPurple;
+        }
+    }
+}
+
+h1 {
+    line-height: 2rem;
+    font-size: 3rem;
+}

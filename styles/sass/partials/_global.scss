@@ -24,8 +24,35 @@ h1, h2, h3, h4, h5 {
     font-style: italic;
 }
 
+li {
+    list-style: none;
+}
+
 a {
     text-decoration: none;
+
+}
+
+p {
+    margin: 0;
+    letter-spacing: 0.5px;
+    line-height: 1.6rem;
+}
+
+button {
+    border-style: none;
+    background-color: $primaryBrown;
+    color: $primaryBlack;
+    padding: 10px;
+
+    a{
+        color: $primaryBlack;
+        padding: 10px 10px;
+    }
+
+    a:hover, a:focus {
+        color: $primaryPurple;
+    }
 }
 
 .wrapper {

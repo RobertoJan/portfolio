@@ -250,6 +250,12 @@ h1, h2, h3, h4, h5 {
   font-style: italic;
 }
 
+h3 {
+  font-size: 1.5rem;
+  padding-bottom: 10px;
+  font-style: normal;
+}
+
 li {
   list-style: none;
 }
@@ -260,8 +266,8 @@ a {
 
 p {
   margin: 0;
-  letter-spacing: 0.5px;
-  line-height: 1.6rem;
+  letter-spacing: 0.2px;
+  line-height: 1.5rem;
 }
 
 button {
@@ -287,7 +293,7 @@ button a:hover, button a:focus {
 header {
   background-image: -webkit-gradient(linear, left top, right bottom, from(#A4AEE3), to(#73859f));
   background-image: linear-gradient(to bottom right, #A4AEE3, #73859f);
-  height: 85vh;
+  height: 80vh;
   color: #ffffff;
 }
 header .wrapper {
@@ -340,23 +346,10 @@ header .wrapper {
 .author p {
   margin: 10px;
 }
-.author button {
-  border-style: none;
-  background-color: #DAC3C0;
-  color: #000000;
-  padding: 10px;
-}
-.author button a {
-  color: #000000;
-  padding: 10px 10px;
-}
-.author button a:hover, .author button a:focus {
-  color: #A4AEE3;
-}
 
 h1 {
   line-height: 2rem;
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 
 .about {
@@ -376,6 +369,7 @@ h1 {
 }
 .about h2 {
   padding-bottom: 15px;
+  font-size: 2.5rem;
 }
 .about p {
   padding: 0 60px;
@@ -405,12 +399,17 @@ h1 {
           align-items: center;
 }
 .skills h2 {
-  font-size: 4rem;
+  font-size: 2.5rem;
 }
 .skills .skillsList {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .skills .skillsItem {
   padding: 20px 20px;
@@ -430,4 +429,144 @@ h1 {
 }
 .skills .iconLabel {
   font-size: 0.8rem;
+}
+
+.projects {
+  padding-top: 80px;
+}
+.projects .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.projects h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 50px 0;
+  border-bottom: solid 3px #CABCDC;
+}
+
+.projectImage {
+  -ms-flex-preferred-size: 47%;
+      flex-basis: 47%;
+}
+
+.projectDescription {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-preferred-size: 47%;
+      flex-basis: 47%;
+}
+
+.project2 {
+  text-align: end;
+}
+
+.descriptionText {
+  padding: 10px 0;
+  font-size: 1rem;
+  line-height: 1.3rem;
+  font-weight: 300;
+}
+
+.project1 {
+  border-bottom: none;
+}
+
+.contact {
+  background-color: #6279b8;
+  padding: 80px 0;
+  color: #ffffff;
+}
+.contact .contactWrapper {
+  max-width: 1280px;
+  width: 40%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.contactList {
+  padding: 15px 0 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.contactList li {
+  font-size: 1.5rem;
+  margin: 0 10px;
+}
+.contactList i {
+  color: #DAC3C0;
+}
+
+.contactForm {
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+.contactForm input {
+  width: 100%;
+  margin-bottom: 15px;
+}
+.contactForm label {
+  text-align: start;
+  margin-bottom: 5px;
+  font-size: 0.8rem;
+}
+.contactForm textarea {
+  margin-bottom: 15px;
+}
+
+footer {
+  padding: 15px 0;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#A4AEE3), to(#73859f));
+  background-image: linear-gradient(to bottom right, #A4AEE3, #73859f);
+}
+footer .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #ffffff;
 }

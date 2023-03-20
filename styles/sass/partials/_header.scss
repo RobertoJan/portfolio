@@ -1,8 +1,8 @@
-@use "./variables" as *;
+@use 'variables' as *;
 
 header {
     background-image: linear-gradient(to bottom right, $primaryPurple, $primaryGrey);
-    height: 85vh;
+    height: 80vh;
     color: $primaryWhite;
 
     .wrapper {
@@ -39,25 +39,9 @@ header {
     p {
         margin: 10px;
     }
-
-    button {
-        border-style: none;
-        background-color: $primaryBrown;
-        color: $primaryBlack;
-        padding: 10px;
-
-        a{
-            color: $primaryBlack;
-            padding: 10px 10px;
-        }
-    
-        a:hover, a:focus {
-            color: $primaryPurple;
-        }
-    }
 }
 
 h1 {
     line-height: 2rem;
-    font-size: 3rem;
+    font-size: 3.5rem;
 }

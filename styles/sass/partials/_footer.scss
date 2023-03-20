@@ -1,0 +1,13 @@
+@use "./variables" as *;
+
+footer {
+    padding: 15px 0;
+    background-image: linear-gradient(to bottom right, $primaryPurple, $primaryGrey);
+
+
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        color: $primaryWhite;
+    }
+}

@@ -38,16 +38,17 @@
         </div>
     </header>
     <main>
-        <section class="about">
+        <section id="about" class="about">
             <div class="wrapper">
                 <h2>About Me</h2>
                 <div class="authorImageContainer">
                     <img src="./assets/robertoJan.png" alt="a picture of Roberto Jan with a neutral face">
                 </div>
                 <p>Hi! My name is Roberto Jan and I am a proficient front-end web developer with focus on crafting responsive and accessible web applications. My technical skills are honed in a variety of programming languages such as React, Javascript, HTML5, CSS3, and API integrations. My experience in customer service and the restaurant industry has imparted in me a discerning eye for detail and a knack for prompt problem-solving. My aspiration is to build visually captivating applications, tailor-made to meet the bespoke needs of my clients.</p>
+                <p>I love listening to music, play video games or read manga and anything that catch my attention on my spare time.</p>
             </div>
         </section>
-        <section class="skills">
+        <section id="skills" class="skills">
             <div class="wrapper">
                 <h2>Skills</h2>
                 <ul class="skillsList">
@@ -96,53 +97,60 @@
                 </ul>
             </div>
         </section>
-        <section class="projects">
+        <section id="projects" class="projects">
             <div class="wrapper">
+                <h2>Projects</h2>
                 <ul>
-                    <div class="project3">
-                        <div class="projectImage"></div>
+                    <div class="project">
+                        <div class="projectImage">
+                            <img src="./assets/comingSoon.jpg" alt="coming soon spelled out with a leaf branch besides it">
+                        </div>
                         <div class="projectDescription">
-                            <h3></h3>
-                            <h4></h4>
-                            <p></p>
+                            <h3>React Project</h3>
+                            <h5>HTML, CSS, JAVASCRIPT, REACT</h5>
+                            <p class="descriptionText">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, quam optio molestias ipsam unde nulla. Recusandae dolore quod explicabo, culpa molestiae voluptatem provident animi placeat aspernatur fugit corporis, mollitia quas.</p>
                             <div class="projectLinks">
                                 <button class="live">
-                                    <a href=""></a>
+                                    <a href="https://github.com/RobertoJan/portfolio">view live</a>
                                 </button>
                                 <button class="code">
-                                    <a href=""></a>
+                                    <a href="">view code</a>
                                 </button>
                             </div>
                         </div>
                     </div>
-                    <div class="project2">
-                        <div class="projectImage"></div>
+                    <div class="project project2">
                         <div class="projectDescription">
-                            <h3></h3>
-                            <h4></h4>
-                            <p></p>
+                            <h3>JobHunt</h3>
+                            <h5>HTML, CSS, JAVASCRIPT, FIREBASE</h5>
+                            <p class="descriptionText"> A pair project with Denny Na where The idea was to utilize HTML, CSS, JAVASCRIPT, and FIREBASE to create a web application where the user could input potential job applications and later review if proceeding with it as a way to keep track of his/her job search journey</p>
                             <div class="projectLinks">
                                 <button class="live">
-                                    <a href=""></a>
+                                    <a href="https://denny-roberto-project2.netlify.app/">view live</a>
                                 </button>
                                 <button class="code">
-                                    <a href=""></a>
+                                    <a href="">view code</a>
                                 </button>
                             </div>
                         </div>
+                        <div class="projectImage">
+                            <img src="./assets/jobHunt.png" alt="JobHunt Website">
+                        </div>
                     </div>
-                    <div class="project1">
-                        <div class="projectImage"></div>
+                    <div class="project project1">
+                        <div class="projectImage">
+                            <img src="./assets/planted.png" alt="Planted website">
+                        </div>
                         <div class="projectDescription">
-                            <h3></h3>
-                            <h4></h4>
-                            <p></p>
+                            <h3>Planted</h3>
+                            <h5>HTML, CSS, JAVASCRIPT</h5>
+                            <p class="descriptionText">This project was originally a web page made with only HTML and CSS where I tried to make it as close to the mock up as possible and later modified using DOM manipulation to apply JAVASCRIPT on form submission </p>
                             <div class="projectLinks">
                                 <button class="live">
-                                    <a href=""></a>
+                                    <a href="https://devrobertoproject1.netlify.app/">view live</a>
                                 </button>
                                 <button class="code">
-                                    <a href=""></a>
+                                    <a href="">view code</a>
                                 </button>
                             </div>
                         </div>
@@ -150,29 +158,45 @@
                 </ul>
             </div>
         </section>
-        <section class="contact">
-            <div class="wrapper">
+        <section id="contact" class="contact">
+            <div class="contactWrapper">
                 <h2>Get in Touch</h2>
-                <ul>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
+                <ul class="contactList">
+                    <li>
+                        <a href="https://www.linkedin.com/in/robertojan/">
+                            <i class="fa-brands fa-linkedin" title="linkedIn"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/RobertoJan">
+                            <i class="fa-brands fa-github" title="gitHub"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:roberto.janliao@gmail.com">
+                            <i class="fa-solid fa-envelope" title="email"></i>
+                        </a>
+                    </li>
                 </ul>
-                <p></p>
-                <form action="">
-                    <label for=""></label>
-                    <input type="text">
-                    <label for=""></label>
-                    <input type="text">
-                    <label for=""></label>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                    <button>submit</button>
+                <p>Thank you for checking this site out. Please feel free to contact me through email about work/learning opportunities or let's connect on LinkedIn!</p>
+                <form class="contactForm" action="https://formspree.io/f/xwkjnpwd" method="POST">
+                    <label for="name">NAME</label>
+                    <input type="text" name="name" id="name">
+                    <label for="email">EMAIL</label>
+                    <input type="email" name="email" id="email">
+                    <label for="message">MESSAGE</label>
+                    <textarea name="" id="message" cols="30" rows="5"></textarea>
+                    <div class="submitButton">
+                        <button>submit</button>
+                    </div>
                 </form>
             </div>
         </section>
     </main>
     <footer>
-        <p>Build in 2023 by Roberto Jan</p>
+        <div class="wrapper">
+            <p>Build in 2023 by Roberto Jan</p>
+        </div>
     </footer>
 </body>
 </html>

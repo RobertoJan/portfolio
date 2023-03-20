@@ -105,6 +105,10 @@
 
 .project2 {
     text-align: end;
+    
+    .projectLinks {
+        justify-content: flex-end;
+    }
 }
 
 .descriptionText {
@@ -116,6 +120,27 @@
 
 .project1 {
     border-bottom: none;
+}
+
+.projectLinks {
+    display: flex;
+    margin-top: 10px;
+}
+
+.live {
+    margin-right: 20px;
+}
+.live, .code {
+
+    a {
+        background-color: $primaryBrown;
+        color: $primaryBlack;
+        padding: 10px;
+    }
+
+    a:hover, a:focus {
+        color: $primaryPurple;
+    }
 }
 
 // ------------CONTACT SECTION STYLES------------

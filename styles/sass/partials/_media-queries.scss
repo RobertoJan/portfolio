@@ -1,0 +1,103 @@
+@use "variables" as *;
+
+@media (max-width:1000px) {
+
+    .project {
+        flex-direction: column;
+
+        .projectDescription {
+            margin: 15px;
+        }
+
+        .projectImage, .projectDescription {
+            width: 60%;
+            align-self: center;
+            text-align: center;
+        }
+
+        .projectLinks {
+            justify-content: center;
+        }
+    }
+
+    .project2 {
+        flex-direction: column-reverse;
+    }
+
+    .contact {
+
+        .contactWrapper {
+            width: 50%;
+        }
+    }
+}
+
+@media (max-width:800px) {
+
+    .project {
+
+        .projectImage, .projectDescription {
+            width: 70%;
+        }
+    }
+
+    .contact {
+
+        .contactWrapper {
+            width: 60%;
+        }
+    }
+}
+
+@media (max-width:600px) {
+    header {
+
+        h1 {
+            font-size: 3rem;
+        }
+    }
+
+    .project {
+
+        .projectImage, .projectDescription {
+            width: 80%;
+        }
+    }
+
+    .contact {
+
+        .contactWrapper {
+            width: 70%;
+        }
+    }
+}
+
+@media (max-width:400px) {
+    header {
+
+        h1 {
+            font-size: 2.5rem;
+        }
+    }
+
+    .project {
+
+        .projectImage, .projectDescription {
+            width: 90%;
+        }
+    }
+
+    .projectLinks {
+
+        .live {
+            margin-bottom: 10px;
+        }
+    }
+
+    .contact {
+
+        .contactWrapper {
+            width: 75%;
+        }
+    }
+}
